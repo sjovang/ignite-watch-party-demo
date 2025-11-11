@@ -1,0 +1,9 @@
+.terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars*
+*.auto.tfvars*
+
+# Ignore direnv
+*.*.envrc
+!*.envr
