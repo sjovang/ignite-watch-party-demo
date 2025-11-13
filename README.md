@@ -34,8 +34,6 @@ The following requirements are needed by this module:
 
 The following resources are used by this module:
 
-- [azuread_directory_role_eligibility_schedule_request.global_admin](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/directory_role_eligibility_schedule_request) (resource)
-- [azuread_group.global_admins](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/group) (resource)
 - [azuread_user.tjs](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/user) (data source)
 
 <!-- markdownlint-disable MD013 -->
@@ -76,30 +74,6 @@ The following Modules are called:
 ### <a name="module_connected_organization"></a> [connected\_organization](#module\_connected\_organization)
 
 Source: ./modules/connected-organization
-
-Version:
-
-### <a name="module_entraid_admin"></a> [entraid\_admin](#module\_entraid\_admin)
-
-Source: ./modules/access-catalog
-
-Version:
-
-### <a name="module_global_admin"></a> [global\_admin](#module\_global\_admin)
-
-Source: ./modules/access-package
-
-Version:
-
-### <a name="module_global_admin_assoc"></a> [global\_admin\_assoc](#module\_global\_admin\_assoc)
-
-Source: ./modules/group-access-package-association
-
-Version:
-
-### <a name="module_global_admin_role_policy"></a> [global\_admin\_role\_policy](#module\_global\_admin\_role\_policy)
-
-Source: ./modules/entraid-pim-role-policy
 
 Version:
 <!-- END_TF_DOCS -->
