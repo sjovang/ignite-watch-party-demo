@@ -1,8 +1,8 @@
 provider "azuread" {}
 
 provider "azurerm" {
-    subscription_id = var.subscription_id
-    features {}
+  subscription_id = var.subscription_id
+  features {}
 }
 
 provider "msgraph" {}

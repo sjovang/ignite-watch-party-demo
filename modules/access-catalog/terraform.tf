@@ -4,10 +4,6 @@ terraform {
       source  = "hashicorp/azuread"
       version = "~> 3.0"
     }
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 4.0"
-    }
     msgraph = {
       source  = "microsoft/msgraph"
       version = "~> 0.2"
