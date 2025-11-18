@@ -23,7 +23,7 @@ The following resources are used by this module:
 
 - [azuread_access_package_catalog.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/access_package_catalog) (resource)
 - [azuread_access_package_catalog_role_assignment.catalog_owner](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/access_package_catalog_role_assignment) (resource)
-- [azuread_group.backup_approvers](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/group) (resource)
+- [msgraph_resource.backup_approvers](https://registry.terraform.io/providers/microsoft/msgraph/latest/docs/resources/resource) (resource)
 - [azuread_access_package_catalog_role.catalog_owner](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/access_package_catalog_role) (data source)
 - [azuread_client_config.current](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/client_config) (data source)
 

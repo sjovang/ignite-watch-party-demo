@@ -14,13 +14,15 @@ The following requirements are needed by this module:
 
 - <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) (~> 3.0)
 
+- <a name="requirement_msgraph"></a> [msgraph](#requirement\_msgraph) (~> 0.2)
+
 ## Resources
 
 The following resources are used by this module:
 
 - [azuread_access_package.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/access_package) (resource)
 - [azuread_access_package_assignment_policy.this](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/access_package_assignment_policy) (resource)
-- [azuread_group.primary_approvers](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/resources/group) (resource)
+- [msgraph_resource.primary_approvers](https://registry.terraform.io/providers/microsoft/msgraph/latest/docs/resources/resource) (resource)
 - [azuread_client_config.current](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/client_config) (data source)
 
 <!-- markdownlint-disable MD013 -->
