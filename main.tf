@@ -8,6 +8,7 @@ module "connected_organization" {
   source                       = "./modules/connected-organization"
   connected_tenant_domain_name = var.external_tenant_domain_name
 }
+
 /* Create access catalog for Entra ID Administration */
 
 /* Create access package for Global Administrator role */
@@ -19,3 +20,5 @@ module "connected_organization" {
 /* assign group access to global administrator role via PIM */
 
 /* Associate group with access catalog and access package */
+
+/* Create access catalog for Entra ID Administration */

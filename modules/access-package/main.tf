@@ -6,13 +6,19 @@ resource "azuread_access_package" "this" {
 
 data "azuread_client_config" "current" {}
 
-resource "azuread_group" "primary_approvers" {
-  display_name = "${var.display_name} - primary approvers"
-  description  = "Primary approvers for the access package ${var.display_name}"
-  owners = [
-    data.azuread_client_config.current.object_id
-  ]
-  security_enabled = true
+resource "msgraph_resource" "primary_approvers" {
+    url = "groups"
+    body = {
+        displayName       = "${var.display_name} Primary approvers"
+        description        = "Primary approver group for access package ${var.display_name}"
+        mailEnabled = false
+        mailNickname = "${lower(replace(var.display_name, "/[-\\s]/", ""))}approvers"
+        securityEnabled   = true
+    }
+
+    response_export_values = {
+      all = "@"
+    }
 }
 
 resource "azuread_access_package_assignment_policy" "this" {
@@ -39,7 +45,7 @@ resource "azuread_access_package_assignment_policy" "this" {
       }
 
       primary_approver {
-        object_id    = azuread_group.primary_approvers.object_id
+        object_id    = msgraph_resource.primary_approvers.output.all.id
         subject_type = "groupMembers"
       }
     }
