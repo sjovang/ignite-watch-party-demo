@@ -3,5 +3,5 @@ output "catalog_id" {
 }
 
 output "backup_approvers_group_object_id" {
-  value = azuread_group.backup_approvers.object_id
+  value = msgraph_resource.backup_approvers.output.all.id
 }

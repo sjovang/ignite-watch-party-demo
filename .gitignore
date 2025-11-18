@@ -11,3 +11,6 @@
 
 # Local azure cli environment
 .azure
+
+# dont include powerpoint
+*.pptx
